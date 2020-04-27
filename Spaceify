@@ -1,4 +1,4 @@
-```lua
+```
 local function spaceify(s, d)
     local t = {}
     for x in s:gmatch(".") do
