@@ -1,4 +1,3 @@
-```
 local function spaceify(s, d)
     local t = {}
     for x in s:gmatch(".") do
@@ -9,4 +8,3 @@ end
 
 
 print(spaceify("Lua!", 1)) -- L u a !
-```
