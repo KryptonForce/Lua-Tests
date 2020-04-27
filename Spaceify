@@ -1,0 +1,10 @@
+local function spaceify(s, d)
+    local t = {}
+    for x in s:gmatch(".") do
+       t[#t + 1] = x
+    end
+    return table.concat(t, (" "):rep(d or 1))
+end
+
+
+print(spaceify("Lua!", 1)) -- L u a !
