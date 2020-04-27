@@ -1,3 +1,9 @@
+local ver = "Lua 5.3"
+if _VERSION ~= ver then
+    print("This code is written for " .. ver .. ", You currently are running " .. _VERSION)
+    return
+end
+
 local function spaceify(s, d)
     local t = {}
     for x in s:gmatch(".") do
