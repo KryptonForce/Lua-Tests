@@ -1,0 +1,14 @@
+function isLeapYear(y)
+    return y % 4 == 0 and y % 100 ~= 0 or y % 400 == 0
+end
+
+local years = {}
+local startD, endD = 1, 2020
+for i = startD, endD do
+  if isLeapYear(i) then years[#years + 1] = i end
+end
+print("From the year " .. startD .. " to " .. endD .. ", there are " .. #years .. " leap years!")
+
+--[[
+  Note: You Can just plainly use 'isLeapYear()' if you just want to check if a year is a leap year!
+]]--
