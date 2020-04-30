@@ -1,19 +1,8 @@
--- Just a check to see if the person is running the required version.
-
-function check(ver)
-    if _VERSION ~= ver then
-        local cvn = tonumber(_VERSION:sub(4, _VERSION:len()))
-        local rvn = tonumber(ver:sub(4, ver:len()))
-        if rvn > cvn then
-            print("This code is written for " .. ver .. ", You currently are running " .. _VERSION .. ", please change to a newer version of Lua")
-            return false
-        elseif rvn <= cvn then
-            return true
-        end
-    end 
-end
-
-if check("Lua 5.3") == false then return end
+--[[local ver = "Lua 5.3"
+if _VERSION ~= ver then
+    print("This program is for " .. ver .. ", please change your software otherwise this program will not run")
+    return
+end]]--
 
 -- Main function
 
