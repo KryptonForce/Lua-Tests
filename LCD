@@ -1,0 +1,15 @@
+function LCD(a, b)
+  local found = false
+  local a2 = tonumber(a:sub(math.floor(a:len() / 2) + 2, a:len()))
+  local b2 = tonumber(b:sub(math.floor(b:len() / 2) + 2, b:len()))
+  local n = 0
+  while not found do
+    n = n + 1
+    if n % a2 == 0 and n % b2 == 0 then 
+       found = true
+    end
+  end
+  print("LCD of " .. a .. " and " .. b .. " is " .. n)
+end
+
+LCD("1/2", "2/3")
